@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const projectsContainer = document.getElementById("projects-list");
+    const loadMoreButton = document.getElementById("load-more-projects-button");
 
     const PROJECTS = [
         {
@@ -10,49 +11,85 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             title: "Luabla",
-            description: "Learn languages, share and study your own decks of cards, or get them from community. Luabla is a bridge for whose want to enrole in the language learning travel with ease.",
+            description: "Learn languages, share and study your own decks of cards, or get them from community. Luabla is a bridge for those who want to enroll in the language learning journey with ease.",
             image: "assets/luabla_3.png",
             technologies: ["Django", "DRF", "FastAPI", "JWT Auth", "PostgreSQL", "MongoDB", "Redis", "HTML", "CSS", "JavaScript", "Swagger"]
         },
         {
             title: "Dogs and Cats Recognizer",
-            description: "Leverage what ML models can do with visualization throught computer vision.",
+            description: "Leverage what ML models can do with visualization through computer vision.",
             image: "assets/data_forge_1.png",
-            technologies: ["TensorFlow", "Keras", "Pandas", "Numpy", "Skitlearn", "Ngrok", "HTML", "CSS", "JS"]
+            technologies: ["TensorFlow", "Keras", "Pandas", "Numpy", "Sklearn", "Ngrok", "HTML", "CSS", "JS"]
+        },
+        {
+            title: "Books API",
+            description: "A simple API to manage book collections.",
+            image: "assets/books_api.png",
+            technologies: ["FastAPI", "MongoDB", "Redis", "Docker", "Swagger"]
+        },
+        {
+            title: "Products API",
+            description: "An API to manage products using FastAPI and MongoDB.",
+            image: "assets/products_api.png",
+            technologies: ["FastAPI", "MongoDB", "Redis", "Docker"]
+        },
+        {
+            title: "IDogs API",
+            description: "A dog breed recognition API using machine learning.",
+            image: "assets/idogs_api.png",
+            technologies: ["FastAPI", "TensorFlow", "PostgreSQL", "Docker"]
         }
     ];
-    
 
-    // Insert projects into the DOM
-    PROJECTS.forEach((project) => {
-        const projectDiv = document.createElement("div");
-        projectDiv.classList.add("project");
+    let displayedProjects = 3;
 
-        projectDiv.innerHTML = `
-            <img src="${project.image}" alt="${project.title}" class="project-image">
-            <div class="project-content">
-                <h3 class="project-title">${project.title}</h3>
-                <p class="project-description">${project.description}</p>
-                <div class="technologies">
-                    ${project.technologies.map(tech => `<span class="tech">${tech}</span>`).join('')}
+    function renderProjects(limit) {
+        projectsContainer.innerHTML = ""; // Clear container
+
+        PROJECTS.slice(0, limit).forEach((project) => {
+            const projectDiv = document.createElement("div");
+            projectDiv.classList.add("project");
+
+            projectDiv.innerHTML = `
+                <img src="${project.image}" alt="${project.title}" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">${project.title}</h3>
+                    <p class="project-description">${project.description}</p>
+                    <div class="technologies">
+                        ${project.technologies.map(tech => `<span class="tech">${tech}</span>`).join('')}
+                    </div>
                 </div>
-            </div>
-        `;
+            `;
 
-        projectsContainer.appendChild(projectDiv);
-    });
-
-    // Intersection Observer for animations
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            }
+            projectsContainer.appendChild(projectDiv);
         });
-    }, { threshold: 0.2 });
 
-    // Observe elements
-    document.querySelectorAll(".project, .projects-title").forEach(element => {
-        observer.observe(element);
+        applyObserver();
+
+        if (displayedProjects >= PROJECTS.length) {
+            loadMoreButton.style.display = "none"; // Hide button when all projects are displayed
+        }
+    }
+
+    function applyObserver() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll(".project").forEach(element => {
+            observer.observe(element);
+        });
+    }
+
+    // Initial rendering
+    renderProjects(displayedProjects);
+
+    loadMoreButton.addEventListener("click", () => {
+        displayedProjects += 3;
+        renderProjects(displayedProjects);
     });
 });
