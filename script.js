@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "Luabla",
             description: "Learn languages, share and study your own decks of cards, or get them from community. Luabla is a bridge for whose want to enrole in the language learning travel with ease.",
-            image: "assets/luabla_1.png",
+            image: "assets/luabla_3.png",
             technologies: ["Django", "DRF", "FastAPI", "JWT Auth", "PostgreSQL", "MongoDB", "Redis", "HTML", "CSS", "JavaScript", "Swagger"]
         },
         {

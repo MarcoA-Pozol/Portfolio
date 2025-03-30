@@ -8,6 +8,10 @@ body {
 }
 
 
+.centered-gradient { 
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 80%, rgb(31, 6, 90) 100%);
+}
+
 
 #intro-name {
     position: fixed;
