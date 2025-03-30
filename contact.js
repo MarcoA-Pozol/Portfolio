@@ -38,12 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("visible");
+            } else {
+                entry.target.classList.remove("visible");
             }
         });
     }, {threshold: 0.2});
 
     // Observe elements
-    document.querySelectorAll(".contact, .contacts-title").forEach(element => {
+    document.querySelectorAll(".contact-option, .contacts-title").forEach(element => {
         observer.observe(element);
     });
 });
