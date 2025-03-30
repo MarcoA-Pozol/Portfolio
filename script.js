@@ -24,19 +24,19 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "Books API",
             description: "A simple API to manage book collections.",
-            image: "assets/books_api.png",
+            image: "assets/luabla_2.png",
             technologies: ["FastAPI", "MongoDB", "Redis", "Docker", "Swagger"]
         },
         {
             title: "Products API",
             description: "An API to manage products using FastAPI and MongoDB.",
-            image: "assets/products_api.png",
+            image: "assets/luabla_1.png",
             technologies: ["FastAPI", "MongoDB", "Redis", "Docker"]
         },
         {
             title: "IDogs API",
             description: "A dog breed recognition API using machine learning.",
-            image: "assets/idogs_api.png",
+            image: "assets/email_logo.png",
             technologies: ["FastAPI", "TensorFlow", "PostgreSQL", "Docker"]
         }
     ];
@@ -76,6 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add("visible");
+                } else {
+                    entry.target.classList.remove("visible"); 
                 }
             });
         }, { threshold: 0.2 });
