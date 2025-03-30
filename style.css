@@ -52,6 +52,16 @@ body {
 
 
 /* About Me Section */
+#open-to-work-tag {
+	color: white;
+	background-color: rgb(190, 60, 30);
+	font-size: 1.0rem;
+	text-align: center;
+	padding-inline: 5px;
+	border-radius: 5px;
+	font-family: monospace;
+}
+
 .aboutme {
     display: flex;
     justify-content: space-between;
@@ -62,6 +72,12 @@ body {
 
 .aboutme div{
     display: inline-flex;
+}
+
+#dev-photo{
+	height: 200px;
+	width: 200px;
+	mask-image: linear-gradient(black 80%, transparent);
 }
 
 .abt-info h2 {
@@ -108,6 +124,11 @@ body {
 .projects {
     border-bottom: 1px solid #333;
     padding-bottom: 20px;
+}
+.projects-container h2 {
+	font-size: 2.0rem;
+	text-align: center;
+	wid
 }
 
 .projects-title {
