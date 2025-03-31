@@ -340,9 +340,35 @@ footer {
         font-size: 1.2rem;
     }
     .aboutme div {
+        width: 100%;
         display: block;
+    }
+    .abt-info.left{
+        width: 90%;
+        padding: 0;
     }
     .abt-info.right{
         margin-top: 200px;
+    }
+    .abt-info.right ul li{
+        display: inline-flex;
+        padding-left: 0;
+    }
+
+    .projects-container{
+        max-width: 768px;
+        display: block;
+    }
+    #projects-list{
+        max-width: 768px;
+        display: block;
+        align-content: center;
+        justify-content: center;
+        padding-inline: 40px;
+    }
+    .projects-container img{
+        width: 100%;
+        height: 250px;
+        justify-self: center;
     }
 }
