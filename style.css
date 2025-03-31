@@ -307,3 +307,42 @@ footer {
     background: #111;
     color: #666;
 }
+
+
+
+
+
+
+
+/* Responsiveness */
+/* Para pantallas menores a 768px (como celulares) */
+@media (max-width: 768px) {
+    body {
+        display: block;
+        max-width: 768px;
+    }
+    #intro-name {
+        position: fixed;
+        top: 0;
+        left: 0;
+        max-width: 768px;
+        font-size: 2.8rem;
+    }
+    .aboutme {
+        max-width: 768px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .aboutme h2 {
+        font-size: 2.5rem;
+    }
+    .aboutme p{
+        font-size: 1.2rem;
+    }
+    .aboutme div {
+        display: block;
+    }
+    .abt-info.right{
+        margin-top: 200px;
+    }
+}
