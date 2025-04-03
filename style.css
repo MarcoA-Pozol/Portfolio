@@ -159,11 +159,31 @@ body {
     transform: translateX(0);
 }
 
+
+.project-image-container {
+	display: flex;
+	flex-direction: column;
+	padding: 15px 5px;
+	padding-top: 5px;
+	border-radius: 10px;
+	align-content: center;
+	background: linear-gradient(rgb(20, 10, 45), rgb(20, 30, 50));
+	box-shadow: 3px 2px 2px 2px black;
+}
+.project-image-container span {
+	color: royalblue;
+	font-family: monospace;
+	font-size: 1.7rem;
+	height: 20px
+	padding-left: 10px;
+}
+
 .project-image {
-    width: 160px;
-    height: 160px;
+    width: 450px;
+    height: 280px;
     border-radius: 8px;
     margin-right: 20px;
+	object-fit: cover;
 }
 
 .project-content {
@@ -171,7 +191,8 @@ body {
 }
 
 .project-title {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
+	color: #02b602;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -179,6 +200,7 @@ body {
 .project-description {
     color: #bbb;
     margin-bottom: 10px;
+	font-size: 1.4rem;
     text-align: justify;
 }
 
@@ -195,39 +217,6 @@ body {
     font-size: 0.9rem;
     margin-right: 5px;
     margin-bottom: 5px;
-}
-
-#load-more-projects-button {
-    display: block;
-    width: 80%;
-    max-width: 500px;
-    margin: 40px 280px;
-    padding: 14px 0;
-    background: linear-gradient(to right, #310677, #1f065a);
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-family: monospace;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    position: relative;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 55% 70%, 50% 100%, 45% 70%, 0% 70%);
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 4px 10px rgba(49, 6, 119, 0.5);
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-}
-
-#load-more-projects-button:hover {
-    background: linear-gradient(to right, #1f065a, #310677);
-    color: #02b602;
-    transform: scale(1.05) scaleX(1.4);
-    box-shadow: 0px 6px 15px rgba(49, 6, 119, 0.7);
-}
-
-#load-more-projects-button:active {
-    transform: scale(0.95);
-    box-shadow: 0px 2px 5px rgba(49, 6, 119, 0.3);
 }
 
 
