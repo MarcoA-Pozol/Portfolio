@@ -163,26 +163,27 @@ body {
 .project-image-container {
 	display: flex;
 	flex-direction: column;
-	padding: 15px 5px;
+	padding: 20px 15px;
 	padding-top: 5px;
 	border-radius: 10px;
 	align-content: center;
 	background: linear-gradient(rgb(20, 10, 45), rgb(20, 30, 50));
 	box-shadow: 3px 2px 2px 2px black;
+    margin-right: 20px;
 }
 .project-image-container span {
-	color: royalblue;
+	color: #02b602;
 	font-family: monospace;
-	font-size: 1.7rem;
-	height: 20px
+	font-size: 1.4rem;
+	height: 20px;
 	padding-left: 10px;
+    margin-bottom: 10px;
 }
 
 .project-image {
     width: 450px;
     height: 280px;
     border-radius: 8px;
-    margin-right: 20px;
 	object-fit: cover;
 }
 
@@ -192,9 +193,9 @@ body {
 
 .project-title {
     font-size: 2.2rem;
+    margin-top: 0;
 	color: #02b602;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
 .project-description {

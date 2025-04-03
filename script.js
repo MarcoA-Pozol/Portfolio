@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const PROJECTS = [
         {
             title: "DataForge",
-            description: "Analyse, visualize, import and export your data from different to different formats like CSV, JSON and XLS.",
+            description: "Analyse, visualize, import and export your data from different to different formats like CSV, JSON and XLS. Ideal for fast data vizualization and charts generation for data analysis.",
             image: "assets/data_forge_1.png",
             technologies: ["Django", "DRF", "React", "PostgreSQL", "JWT Auth", "Docker", "Jenkins", "Redis", "HTML", "CSS", "JavaScript", "Prometheus", "Graphana", "UnitTest"]
         },
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             projectDiv.innerHTML = `
 				<div class="project-image-container">
-					<span>⚫⚫⚫</span>
+					<span>⦿⦿⦿</span>
 					<img src="${project.image}" alt="${project.title}" class="project-image">
 				</div>
                 <div class="project-content">
