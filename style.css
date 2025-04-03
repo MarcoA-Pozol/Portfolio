@@ -223,6 +223,17 @@ body {
 
 
 
+/*Resume Container*/
+.resume-container h2 {
+	font-size: 2.0rem;
+	text-align: center;
+}
+
+/*Education Container*/
+.education-container h2 {
+	font-size: 2.0rem;
+	text-align: center;
+}
 
 /* Contact */
 .contacts-container {
