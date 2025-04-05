@@ -77,8 +77,8 @@ body {
 #dev-photo{
 	height: 200px;
 	width: 200px;
-	mask-image: linear-gradient(black 80%, transparent);
-    border-end-end-radius: 20px;
+	mask-image: linear-gradient(black 70%, transparent);
+    border-bottom-right-radius: 10px;
     border-top-left-radius: 60px;
     border-top-right-radius: 5px;
     border:1px dashed rgb(255, 255, 255);
@@ -224,9 +224,35 @@ body {
 
 
 /*Resume Container*/
+.resume-container{
+    display: flex;
+    flex-direction: column;
+}
 .resume-container h2 {
 	font-size: 2.0rem;
 	text-align: center;
+}
+.resume-container a{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: white;
+}
+.cv-image {
+    padding-top: 0;
+    margin-top: 0;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.4s ease;
+    cursor: zoom-in;
+}
+.cv-image:hover {
+    transform: scale(1.4);
 }
 
 /*Education Container*/
