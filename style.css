@@ -234,6 +234,71 @@ body {
 	font-size: 2.0rem;
 	text-align: center;
 }
+#education-text{
+    font-size: 1.2rem;
+    text-align: center;
+    padding-inline: 10%;
+}
+#education-content{
+    display: inline-flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+#university-tag{
+    background-color: royalblue;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#career-tag{
+    background-color: crimson;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#graduation-tag{
+    background-color: goldenrod;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Languages */
+.languages-container h2 {
+	font-size: 2.0rem;
+	text-align: center;
+}
+#languages-text{
+    font-size: 1.2rem;
+    text-align: center;
+    padding-inline: 10%;
+}
+#languages-content{
+    display: inline-flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+.languages-tag{
+    background-color: #310677;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    justify-self: center;
+    text-align: center;
+    font-weight: bold;
+}
+.flag-icon {
+    width: 22px;
+    height: 16px;
+    margin-right: 8px;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  }
 
 /* Contact */
 .contacts-container {
