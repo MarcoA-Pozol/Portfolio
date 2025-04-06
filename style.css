@@ -464,3 +464,61 @@ footer {
         justify-self: center;
     }
 }
+
+/* Effects */
+.blush-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.blush-glow.first {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 200px;
+  transform: translate(-70%, -50%);
+  background: radial-gradient(circle, rgba(15, 10, 35, 0.5), transparent 50%);
+  filter: blur(10px);
+  z-index: 1;
+}
+.blush-glow.second {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 380px;
+  transform: translate(80%, -10%);
+  background: radial-gradient(circle, rgba(150, 10, 35, 0.3), transparent 80%);
+  filter: blur(200px);
+  z-index: 1;
+  clip-path: polygon(
+    90% 30%, 40% 20%, 10% 30%, 70% 50%, 
+    60% 20%, 40% 80%, 20% 70%, 90% 10%
+  );
+  animation: blushColorShift 6s ease-in-out infinite alternate;
+}
+
+
+
+/* Animations */
+@keyframes blushColorShift {
+  0% {
+    background: radial-gradient(circle at 30% 30%, red, #ffdde1);
+	transform: scale(1.05);
+  }
+  25% {
+    background: radial-gradient(circle at 30% 30%, yellow, #ffe5ec);
+	transform: translate(60%, 20%);
+  }
+  50% {
+    background: radial-gradient(circle at 30% 30%, #ffe0f0, #fddbe0);
+	transform: scale(2.2);
+  }
+  75% {
+    background: radial-gradient(circle at 30% 30%, blue, #fff0f4);
+  }
+  100% {
+    background: radial-gradient(circle at 30% 30%, green, #ffdde1);
+  }
+}
