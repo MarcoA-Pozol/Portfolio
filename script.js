@@ -15,30 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
             image: "assets/luabla_3.png",
             technologies: ["Django", "DRF", "FastAPI", "JWT Auth", "PostgreSQL", "MongoDB", "Redis", "HTML", "CSS", "JavaScript", "Swagger"]
         },
-        {
-            title: "Dogs and Cats Recognizer",
-            description: "Leverage what ML models can do with visualization through computer vision.",
-            image: "assets/data_forge_1.png",
-            technologies: ["TensorFlow", "Keras", "Pandas", "Numpy", "Sklearn", "Ngrok", "HTML", "CSS", "JS"]
-        },
-        {
-            title: "Books API",
-            description: "A simple API to manage book collections.",
-            image: "assets/luabla_2.png",
-            technologies: ["FastAPI", "MongoDB", "Redis", "Docker", "Swagger"]
-        },
-        {
-            title: "Products API",
-            description: "An API to manage products using FastAPI and MongoDB.",
-            image: "assets/luabla_1.png",
-            technologies: ["FastAPI", "MongoDB", "Redis", "Docker"]
-        },
-        {
-            title: "IDogs API",
-            description: "A dog breed recognition API using machine learning.",
-            image: "assets/email_logo.png",
-            technologies: ["FastAPI", "TensorFlow", "PostgreSQL", "Docker"]
-        }
     ];
 
     let displayedProjects = 6;
