@@ -15,6 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
             image: "assets/luabla_3.png",
             technologies: ["Django", "DRF", "FastAPI", "JWT Auth", "PostgreSQL", "MongoDB", "Redis", "HTML", "CSS", "JavaScript", "Swagger"]
         },
+        {
+            title: "ETL Population Dataset",
+            description: "Application of each ETL process step for exploratory and analytical data science over a USA population dataset for patterns identification, tendencies and comparatives.",
+            image: "assets/avg_salary_sum_salary_plots.png",
+            technologies: ["Python", "Excel", "SQL", "PowerBI", "PostgreSQL", "Pandas", "Matplotlib", "Seaborn"]
+        },
     ];
 
     let displayedProjects = 6;
