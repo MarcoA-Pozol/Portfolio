@@ -4,16 +4,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const PROJECTS = [
         {
-            title: "DataForge",
-            description: "Analyse, visualize, import and export your data from different to different formats like CSV, JSON and XLS. Ideal for fast data vizualization and charts generation for data analysis.",
-            image: "assets/data_forge_1.png",
-            technologies: ["Django", "DRF", "React", "PostgreSQL", "JWT Auth", "Docker", "Jenkins", "Redis", "HTML", "CSS", "JavaScript", "Prometheus", "Graphana", "UnitTest"]
-        },
-        {
             title: "Luabla",
             description: "Learn languages, share and study your own decks of cards, or get them from community. Luabla is a bridge for those who want to enroll in the language learning journey with ease.",
             image: "assets/luabla_3.png",
             technologies: ["Django", "DRF", "FastAPI", "JWT Auth", "PostgreSQL", "MongoDB", "Redis", "HTML", "CSS", "JavaScript", "Swagger"]
+        },
+        {
+            title: "Pet - Tasks Manager",
+            description: "Manage your time, generate routinary tasks to do day by day, easy to create, complete and success. Use a pet to feed and make it happier the most you complete tasks.",
+            image: "assets/pettaskmanagerpicture.png",
+            technologies: ["TypeScript", "NodeJS", "ExpressJS", "MongoDB", "React", "JWT Auth", "HTML", "CSS", "JavaScript", "RESTful API"]
+        },
+        {
+            title: "DataForge",
+            description: "Analyse, visualize, import and export your data from different to different formats like CSV, JSON and XLS. Ideal for fast data vizualization and charts generation for data analysis.",
+            image: "assets/data_forge_1.png",
+            technologies: ["Django", "DRF", "React", "PostgreSQL", "JWT Auth", "Docker", "Jenkins", "Redis", "HTML", "CSS", "JavaScript", "Prometheus", "Graphana", "UnitTest"]
         },
         {
             title: "ETL Population Dataset",
