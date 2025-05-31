@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "DataForge",
             description: "Analyse, visualize, import and export your data from different to different formats like CSV, JSON and XLS. Ideal for fast data vizualization and charts generation for data analysis.",
-            image: "assets/data_forge_1.png",
+            image: "assets/dataforge2.png",
             technologies: ["Django", "DRF", "React", "PostgreSQL", "JWT Auth", "Docker", "Jenkins", "Redis", "HTML", "CSS", "JavaScript", "Prometheus", "Graphana", "UnitTest"]
         },
         {
