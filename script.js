@@ -4,27 +4,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const PROJECTS = [
         {
+            title: "Manufacturing ERP & CRM",
+            description: "ERP + CRM for a computers/cellphones/laptops designing, assembling, testing, producing and selling processes management, plus customer and client management for financial tracking. This system is suitable for any other company or industry of manufacturing that uses components to assemble its final product.",
+            image: ["assets/nss_project_3.png", "assets/nss_project_2.png", "assets/nss_project_4.png"],
+            technologies: ["Vue3", "FastAPI", "PostgreSQL", "Redis", "Typescript", "JWT", "SMTP", "Poetry", "REST"]
+        },
+        {
             title: "Luabla",
-            description: "Learn languages, share and study your own decks of cards, or get them from community. Luabla is a bridge for those who want to enroll in the language learning journey with ease.",
-            image: "assets/luabla_3.png",
+            description: "Learn languages, share and study your own decks of cards, or get them from the community. Luabla is a bridge for those who want to enroll in the language learning journey with ease.",
+            image: ["assets/luabla_3.png", "assets/luabla_2.png", "assets/luabla_1.png"],
             technologies: ["Django", "DRF", "FastAPI", "JWT Auth", "PostgreSQL", "MongoDB", "Redis", "HTML", "CSS", "JavaScript", "Swagger"]
         },
         {
-            title: "Pet - Tasks Manager",
-            description: "Manage your time, generate routinary tasks to do day by day, easy to create, complete and success. Use a pet to feed and make it happier the most you complete tasks.",
-            image: "assets/pettaskmanagerpicture.png",
-            technologies: ["TypeScript", "NodeJS", "ExpressJS", "MongoDB", "React", "JWT Auth", "HTML", "CSS", "JavaScript", "RESTful API"]
-        },
-        {
             title: "DataForge",
-            description: "Analyse, visualize, import and export your data from different to different formats like CSV, JSON and XLS. Ideal for fast data vizualization and charts generation for data analysis.",
-            image: "assets/dataforge2.png",
+            description: "Analyse, visualize, import and export your data between formats like CSV, JSON, and XLS. Ideal for fast visualization and chart generation for analysis.",
+            image: ["assets/dataforge2.png", "assets/dataforge1.png"],
             technologies: ["Django", "DRF", "React", "PostgreSQL", "JWT Auth", "Docker", "Jenkins", "Redis", "HTML", "CSS", "JavaScript", "Prometheus", "Graphana", "UnitTest"]
         },
         {
             title: "ETL Population Dataset",
-            description: "Application of each ETL process step for exploratory and analytical data science over a USA population dataset for patterns identification, tendencies and comparatives.",
-            image: "assets/avg_salary_sum_salary_plots.png",
+            description: "Application of each ETL process step for exploratory and analytical data science over a USA population dataset for pattern identification and comparative analysis.",
+            image: ["assets/avg_salary_sum_salary_plots.png"],
             technologies: ["Python", "Excel", "SQL", "PowerBI", "PostgreSQL", "Pandas", "Matplotlib", "Seaborn"]
         },
     ];
@@ -34,15 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderProjects(limit) {
         projectsContainer.innerHTML = ""; // Clear container
 
-        PROJECTS.slice(0, limit).forEach((project) => {
+        PROJECTS.slice(0, limit).forEach((project, index) => {
             const projectDiv = document.createElement("div");
             projectDiv.classList.add("project");
 
+            const imageContainerId = `project-image-${index}`;
+
             projectDiv.innerHTML = `
-				<div class="project-image-container">
-					<span>⦿⦿⦿</span>
-					<img src="${project.image}" alt="${project.title}" class="project-image">
-				</div>
+                <div class="project-image-container">
+                    <img src="${project.image[0]}" alt="${project.title}" class="project-image" id="${imageContainerId}">
+                </div>
                 <div class="project-content">
                     <h3 class="project-title">${project.title}</h3>
                     <p class="project-description">${project.description}</p>
@@ -53,13 +54,38 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
 
             projectsContainer.appendChild(projectDiv);
+
+            // Start carousel only if there are multiple images
+            if (project.image.length > 1) {
+                startImageCarousel(imageContainerId, project.image);
+            }
         });
 
         applyObserver();
 
         if (displayedProjects >= PROJECTS.length) {
-            loadMoreButton.style.display = "none"; // Hide button when all projects are displayed
+            loadMoreButton?.style && (loadMoreButton.style.display = "none");
         }
+    }
+
+    function startImageCarousel(imageId, images) {
+        let index = 0;
+        const imageElement = document.getElementById(imageId);
+
+        setInterval(() => {
+            index = (index + 1) % images.length;
+            imageElement.classList.add("fade-out");
+
+            setTimeout(() => {
+                imageElement.src = images[index];
+                imageElement.classList.remove("fade-out");
+                imageElement.classList.add("fade-in");
+            }, 300);
+
+            setTimeout(() => {
+                imageElement.classList.remove("fade-in");
+            }, 1000);
+        }, 5000);
     }
 
     function applyObserver() {

@@ -159,6 +159,21 @@ body {
     transform: translateX(0);
 }
 
+.project-image {
+    width: 100%;
+    border-radius: 8px;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+
 
 .project-image-container {
 	display: flex;
@@ -194,7 +209,7 @@ body {
 .project-title {
     font-size: 2.2rem;
     margin-top: 0;
-	color: #02b602;
+	color: #8502ff;
     font-weight: bold;
 }
 
