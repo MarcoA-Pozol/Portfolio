@@ -3,6 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const loadMoreButton = document.getElementById("load-more-projects-button");
 
     const PROJECTS = [
+            {
+            title: "REGAMSA Enterprise ",
+            description: "Custom ERP + CRM developed for REGAMSA, a growing company in Mexico specializing in the purchase, assembly, installation, and maintenance of medical gas networks for hospitals and clinics. Before this system, operations were scattered across multiple computers using Excel sheets and email-based communication between departments, leading to inefficiency and lack of synchronization. The new platform centralizes inventory, production, sales, and customer management, enabling real-time collaboration, financial tracking, and streamlined workflows. Designed with scalability in mind, it supports REGAMSA’s expansion plans into international markets while modernizing its administrative processes.",
+            image: ["assets/regamsa_sc.png"],
+            technologies: ["Vue3", "FastAPI", "PostgreSQL", "AWS", "OpenAI", "Typescript", "JWT", "SMTP", "REST"]
+        },
         {
             title: "Manufacturing ERP & CRM",
             description: "ERP + CRM for a computers/cellphones/laptops designing, assembling, testing, producing and selling processes management, plus customer and client management for financial tracking. This system is suitable for any other company or industry of manufacturing that uses components to assemble its final product.",
