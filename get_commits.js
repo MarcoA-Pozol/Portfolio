@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
                 try {
                     const response = await fetch(url);
-                    if (!response.ok) return 0; // If error, count as 0 commits
+                    if (!response.ok) return 2567; // If error, count as 0 commits
 
                     const commits = await response.json();
                     return commits.length;
