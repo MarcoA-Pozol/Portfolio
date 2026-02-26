@@ -3,11 +3,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const loadMoreButton = document.getElementById("load-more-projects-button");
 
     const PROJECTS = [
-            {
-            title: "REGAMSA Enterprise ",
+        {
+            title: "IoT SaaS · REGAMSA Medical",
+            description: "Ecosistema SaaS para gestión de dispositivos médicos con arquitectura serverless. Integra AWS IoT Core, pasarelas de pago (Openpay) y lógica de 'kill switch' para suspender servicios por impago. Frontend mobile‑first con Flutter, backend híbrido Python/AWS-Lambda y base de datos Aurora DSQL.",
+            image: ["assets/regamsa_saas_1.png"],
+            technologies: ["Flutter", "FastAPI", "AWS Lambda", "Aurora DSQL", "IoT Core", "Openpay", "TypeScript", "MQTT"]
+        },
+        {
+            title: "REGAMSA ERP ",
             description: "Custom ERP + CRM developed for REGAMSA, a growing company in Mexico specializing in the purchase, assembly, installation, and maintenance of medical gas networks for hospitals and clinics. Before this system, operations were scattered across multiple computers using Excel sheets and email-based communication between departments, leading to inefficiency and lack of synchronization. The new platform centralizes inventory, production, sales, and customer management, enabling real-time collaboration, financial tracking, and streamlined workflows. Designed with scalability in mind, it supports REGAMSA’s expansion plans into international markets while modernizing its administrative processes.",
-            image: ["assets/regamsa_sc.png"],
-            technologies: ["Vue3", "FastAPI", "PostgreSQL", "AWS", "OpenAI", "Typescript", "JWT", "SMTP", "REST"]
+            image: ["assets/regamsa_erp_1.png"],
+            technologies: ["React Native", "FastAPI", "PostgreSQL", "OpenAI", "Typescript", "JWT", "SMTP", "REST", "AWS IoT Core", "AWS Lambda", "AWS API Gateway"]
         },
         {
             title: "Manufacturing ERP & CRM",

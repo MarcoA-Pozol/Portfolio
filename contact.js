@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const contactContainer = document.getElementById("contacts-list");
     
-    // Contact 
     const CONTACTMEDIA = [
         {   
             title: "GitHub",
@@ -15,20 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             title: "Email",
-            url: "mailto:your@email.com?subject=Hello&body=I%20want%20to%20contact%20you.",
+            url: "mailto:marcoantoniopozolnarciso@gmail.com?subject=Contacto%20desde%20portfolio&body=Hola%20Marco,%20me%20interesa%20tu%20perfil",
             image: "assets/email_logo.png",
         }
     ];
-    
 
-    // Insert projects into the DOM
     CONTACTMEDIA.forEach((contact) => {
         const contactDiv = document.createElement("div");
         contactDiv.classList.add("contact-option");
 
         contactDiv.innerHTML = `
-            <a href="${contact.url}"  target="_blank">
+            <a href="${contact.url}" target="_blank" title="${contact.title}">
                 <img src="${contact.image}" alt="${contact.title}" class="contact-image">
+                <span style="font-size: 0.8rem; color: #aaa;">${contact.title}</span>
             </a>    
         `;
         contactContainer.appendChild(contactDiv);
@@ -42,9 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 entry.target.classList.remove("visible");
             }
         });
-    }, {threshold: 0.2});
+    }, { threshold: 0.2 });
 
-    // Observe elements
     document.querySelectorAll(".contact-option, .contacts-title").forEach(element => {
         observer.observe(element);
     });

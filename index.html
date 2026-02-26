@@ -3,86 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - MarcoA-Pozol</title>
+    <title>Marco Pozol · Cloud & FullStack Architect</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts para tipografía más moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
-    <script src="get_commits.js"></script> <!--Get number of contributions in GitHub-->
+    <script defer src="contact.js"></script>
+    <!-- <script src="get_commits.js"></script> --> <!-- Descomenta si lo tienes listo -->
 </head>
 <body class="centered-gradient">
-    <div id="intro-name">Hello World&nbsp;:)</div>
-	
-	<div class="blush-wrapper">
-		<div class="blush-glow first"></div>
-		<div class="blush-glow second"></div>
-		<section class="aboutme">
-			<div>
-				<aside class="abt-info left">
-					<h2>FULLSTACK</h2>
-					<h2 style="color: white;">&nbsp;DEVELOPER <li class="fas fa-rocket"></li></h2>
-					<p>Hi! I'm <strong style="color: white;">Marco</strong>. A dedicated Software Engineer and Developer with 2+ years of experience in designing, building and maintaining high-performance, scalable and responsive web solutions in both server and client sides. <span id="open-to-work-tag">OPEN TO WORK</span></p>
-				</aside>
-				<aside class="abt-info right">
-					<ul>
-						<li class="experience-years"><strong>2+</strong><p>Years of Experience</p></li>
-						<li class="completed-projects"><strong>12+</strong><p>Built Projects</p></li>
-						<li class="github-contributions"><strong id="commit-count">1000+</strong><p>Contributions in GitHub</p></li> <!--Connect to github API to get number of contributions-->
-					</ul>
-				</aside>
-			</div>
-		</section>
-	</div>
+    <!-- Navegación limpia (opcional) -->
+    <!-- <nav>...</nav> -->
 
-    <div class="projects-container">
-		<h2>━━━━━━━━━━━━━━━━ Projects ━━━━━━━━━━━━━━━</h2>
-        <div id="projects-list"><!--Projects will be loaded here dinamically--></div>
-    </div>
-
-    <div class="resume-container">
-		<h2>━━━━━━━━━━━━━━━ Resume ━━━━━━━━━━━━━━━━</h2>
-        <a a href="assets/marco_cv.pdf" download>Download my resume <i class="fas fa-download"></i></a>
-        <img src="assets/cv_sc.png" alt="My Resume" class="cv-image">
-    </div>
-
-    <div class="education-container">
-		<h2>━━━━━━━━━━━━━━━━ Education ━━━━━━━━━━━━━━━</h2>
-        <p id="education-text">I am currently acomplishing my courses and professional formation in <strong>Software Engineering</strong> by completing courses in my virtual campus "<strong>UVEG</strong>" and studying appart every day to grow up my habilities to develop software systems by learning and building technical skills reading documentation and practicing in real projects with technologies I consider important to solve reducing the invested time while developing and delivering a better product to the client in less time. Besides I consider other aspects like the soft skills to become a profesional not only in the technical field, but in interpersonal relations to build a better work environment and stronger customer relations.
-        </p>
-        <div id="education-content">
-            <span id="university-tag">Universidad Virtual del Estado de Guanajuato <i class="fas fa-building"></i></span>
-            <span id="career-tag">Computer Systems Engineering <i class="fas fa-laptop"></i></span>
-            <span id="graduation-tag">2023 - Expected April, 2026 <i class="fas fa-medal"></i></span>
+    <!-- INTRO / HERO SECTION (más profesional, sin fadeOut juguetón) -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge"><i class="fas fa-cloud"></i> Cloud · Serverless · IoT</span>
+            <h1 class="hero-title">
+                <span class="hero-greeting">{</span> 
+                Marco Pozol <span class="hero-greeting">:</span> 
+                <span class="hero-highlight">Cloud & FullStack Architect</span> 
+                <span class="hero-greeting">}</span>
+            </h1>
+            <p class="hero-subtitle">
+                Arquitecto de soluciones con enfoque en <strong>SaaS de IoT</strong>, automatización de pagos 
+                e infraestructura híbrida (on‑premise + serverless). 
+                Convierto dispositivos físicos en negocios recurrentes.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary"><i class="fas fa-arrow-down"></i> Ver proyectos</a>
+                <a href="assets/marco_cv.pdf" download class="btn-outline"><i class="fas fa-download"></i> Resume</a>
+            </div>
         </div>
-    </div>
-
-    <div class="languages-container">
-		<h2>━━━━━━━━━━━━━━━━ Languages ━━━━━━━━━━━━━━━</h2>
-        <p id="languages-text">I am an <strong>entusiast</strong> about learning languages, in fact, one of my objectives is to become a polyglot, this is what is bringing me the foundation in my constant learning mindset. I started to learn English a year ago and then I discovered one of my favourite hobbies and its benefits in technology, meeting people and behaving in a totally different and professional way, that's how learning English transformed my live, now I have access to more content, pleople and oportunities. I enjoy talking to natives in different platforms, by sharing culture, feelings, small talks and meeting new friends.
-        </p>
-        <div id="languages-content">
-            <span class="languages-tag"><img src="assets/svg/usflag.svg" alt="Spain flag" class="flag-icon">English - Advanced</span>
-            <span class="languages-tag"><img src="assets/svg/mxflag.svg" alt="Spain flag" class="flag-icon">Spanish - Native</span>
-            <span class="languages-tag"><img src="assets/svg/cnflag.svg" alt="Spain flag" class="flag-icon">Mandarin - Begineer</span>
-            <span class="languages-tag"><img src="assets/svg/deflag.svg" alt="Spain flag" class="flag-icon">German - Begineer</span>
+        <!-- Pequeño "command center" de stats -->
+        <div class="hero-stats">
+            <div class="stat-item">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <strong>5+</strong>
+                <span>proyectos cloud</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-code-branch"></i>
+                <strong>3+</strong>
+                <span>años fullstack</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-microchip"></i>
+                <strong>2</strong>
+                <span>SAAS IoT en prod</span>
+            </div>
         </div>
+        <!-- Blush effects heredados (mejorados) -->
+        <div class="blush-glow first"></div>
+        <div class="blush-glow second"></div>
+    </section>
+
+    <!-- ABOUT ME compacto pero con foto y esencia -->
+    <section class="aboutme">
+        <div class="aboutme-grid">
+            <aside class="abt-info left">
+                <h2>FullStack <span style="color: white;">&</span> Cloud</h2>
+                <p>
+                    <i class="fas fa-terminal" style="color: #9b59b6; margin-right: 8px;"></i>
+                    Hola, soy <strong>Marco</strong>. Durante los últimos años he pasado de escribir código frontend 
+                    a <strong>diseñar arquitecturas híbridas</strong> que conectan hardware, AWS y pasarelas de pago. 
+                    Me especializo en automatizar procesos industriales y monetizar dispositivos mediante modelos SaaS.
+                </p>
+                <div class="availability-tag">
+                    <span class="pulse-dot"></span> OPEN TO WORK
+                </div>
+            </aside>
+            <div class="abt-info photo">
+                <img id="dev-photo" src="assets/profile_image.jpg" alt="MarcoA-Pozol">
+            </div>
+            <aside class="abt-info right">
+                <ul>
+                    <li><i class="fas fa-certificate"></i> <strong>AWS</strong><p>Lambda, IoT Core, Aurora DSQL</p></li>
+                    <li><i class="fas fa-mobile-alt"></i> <strong>Mobile-First</strong><p>React Native, Flutter</p></li>
+                    <li><i class="fas fa-credit-card"></i> <strong>Payments</strong><p>Openpay / Facturapi</p></li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <!-- SKILLS (categorizadas con iconos) -->
+    <section class="skills-section">
+        <h2 class="section-title"><i class="fas fa-cogs"></i> Skills & Tooling</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-cloud"></i> Cloud (AWS)</h3>
+                <ul>
+                    <li>IoT Core, Lambda, Aurora DSQL</li>
+                    <li>API Gateway, Cognito, EventBridge</li>
+                    <li>S3, DynamoDB, CloudWatch, IAM</li>
+                    <li>Serverless + on‑premise híbrido</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> FullStack</h3>
+                <ul>
+                    <li>TypeScript / JavaScript · React · Vue</li>
+                    <li>Python (FastAPI, Django) · Node.js</li>
+                    <li>PostgreSQL, MongoDB, Redis</li>
+                    <li>REST · MQTT · WebSockets</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-robot"></i> IoT & Hardware</h3>
+                <ul>
+                    <li>Raspberry Pi · Systemd · Bash</li>
+                    <li>Mosquitto (MQTT) · certificados x.509</li>
+                    <li>Kill‑switch local/remoto</li>
+                    <li>Integración con sensores/actuadores</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> DevOps & Tools</h3>
+                <ul>
+                    <li>Docker · GitHub Actions (CI/CD)</li>
+                    <li>Linux (Ubuntu, systemd)</li>
+                    <li>UnitTest · Prometheus básico</li>
+                    <li>Organización · adaptabilidad</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA DESTACADA (ahora con la nueva de REGAMSA) -->
+    <section class="experience-section">
+        <h2 class="section-title"><i class="fas fa-briefcase"></i> Experiencia reciente</h2>
+        <div class="experience-card">
+            <div class="exp-header">
+                <i class="fas fa-microchip"></i>
+                <div>
+                    <h3>IoT SaaS Ecosystem · REGAMSA Medical</h3>
+                    <span class="exp-date">Nov 2025 — actual</span>
+                </div>
+            </div>
+            <p><strong>FullStack & Cloud Engineer</strong> — Arquitectura completa de un SaaS para gestión de dispositivos médicos conectados.</p>
+            <ul class="exp-details">
+                <li><i class="fas fa-check-circle"></i> Integración de <strong>AWS IoT Core</strong> con pasarelas de pago (Openpay/Facturapi) para automatizar suscripciones.</li>
+                <li><i class="fas fa-check-circle"></i> Lógica de <strong>“Kill Switch”</strong> remoto/local que desactiva certificados IoT y servicios Mosquitto ante impago.</li>
+                <li><i class="fas fa-check-circle"></i> WebViews + Webhooks para facturación electrónica automatizada (100% reducción de carga administrativa).</li>
+                <li><i class="fas fa-check-circle"></i> Uso de <strong>Aurora DSQL, Lambda y EventBridge</strong> para escalar con baja latencia.</li>
+            </ul>
+        </div>
+        <div class="experience-card">
+            <div class="exp-header">
+                <i class="fas fa-industry"></i>
+                <div>
+                    <h3>Industrial Process Optimization · REGAMSA Medical</h3>
+                    <span class="exp-date">Ene 2026 — actual</span>
+                </div>
+            </div>
+            <p><strong>Software Engineer</strong> — ERP mobile‑first para planta manufacturera.</p>
+            <ul class="exp-details">
+                <li><i class="fas fa-check-circle"></i> Flujo desde orden de compra hasta entrega final, eliminando cuellos de botella.</li>
+                <li><i class="fas fa-check-circle"></i> Semáforo operacional con MQTT + WebSockets para monitoreo en tiempo real.</li>
+                <li><i class="fas fa-check-circle"></i> Backend híbrido: FastAPI (on‑premise) + AWS Lambda, con disponibilidad 24/7.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROJECTS (mismo sistema de script.js, solo cambia el título) -->
+    <div class="projects-container" id="projects">
+        <h2 class="section-title"><i class="fas fa-project-diagram"></i> Proyectos clave</h2>
+        <div id="projects-list"></div>
+        <!-- <button id="load-more-projects-button" style="display: none;">Cargar más</button> -->
     </div>
 
+    <!-- EDUCATION + LANGUAGES unificados con iconos -->
+    <section class="education-languages">
+        <div class="edu-card">
+            <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
+            <p><strong>Ingeniería en Sistemas Computacionales</strong> · UVEG <i class="fas fa-building"></i></p>
+            <p>2023 — (Esperado Jun 2026) <i class="fas fa-medal"></i></p>
+            <p class="edu-description">Formación continua con enfoque autodidacta, aprendiendo de documentación oficial y proyectos reales. Además de la técnica, desarrollo habilidades interpersonales para entornos profesionales.</p>
+        </div>
+        <div class="lang-card">
+            <h2><i class="fas fa-language"></i> Idiomas</h2>
+            <ul>
+                <li><img src="assets/svg/usflag.svg" alt="US" class="flag-icon"> Inglés · B2 (conversacional)</li>
+                <li><img src="assets/svg/mxflag.svg" alt="MX" class="flag-icon"> Español · nativo</li>
+                <li><img src="assets/svg/cnflag.svg" alt="CN" class="flag-icon"> Mandarín · principiante</li>
+                <li><img src="assets/svg/deflag.svg" alt="DE" class="flag-icon"> Alemán · principiante</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT (la foto ya se movió a about, así que aquí solo contacto) -->
     <div class="contacts-container">
-		
-		<section class="abt-info photo">
-			<img id="dev-photo" src="assets/profile_image.jpg" alt="MarcoA-Pozol">
-		</section>
-        <h2>Contact with me:</h2>
-        <div id="contacts-list"><!--Contact options will be loaded here dinamically--></div>
-        
-        <span id="last-message">I'll be glad to coolaborate with your company. <i class="fas fa-users"></i></span>
+        <h2><i class="fas fa-paper-plane"></i> Conectemos</h2>
+        <div id="contacts-list"></div>
+        <span id="last-message"><i class="fas fa-handshake"></i> Listo para colaborar en tu próximo desafío cloud.</span>
     </div>
-    <script src="contact.js"></script>
-
-
 
     <footer>
-        <p>&copy; 2025 MarcoA-Pozol <i class="fas fa-cat"></i></p>
+        <p>© 2025 Marco Pozol · <i class="fas fa-cat"></i> · built with serverless attitude</p>
     </footer>
 </body>
 </html>
