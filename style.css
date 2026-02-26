@@ -17,7 +17,7 @@ body {
     background: radial-gradient(circle at 30% 30%, #12101f, #030105 90%);
 }
 
-/* ===== TIPOGRAFÍA ===== */
+/* ===== TIPOGRAFY ===== */
 h1, h2, h3, h4 {
     font-weight: 600;
     letter-spacing: -0.02em;
@@ -40,7 +40,7 @@ h1, h2, h3, h4 {
     color: #a78bfa;
 }
 
-/* ===== HERO SECTION (reemplaza el intro flotante) ===== */
+/* ===== HERO SECTION ===== */
 .hero {
     min-height: 90vh;
     display: flex;
@@ -170,7 +170,7 @@ h1, h2, h3, h4 {
     text-align: left;
 }
 
-/* blush effects heredados pero más sutiles */
+/* Blush Effect */
 .blush-glow {
     position: absolute;
     width: 60vw;
@@ -330,7 +330,7 @@ h1, h2, h3, h4 {
     font-size: 1.2rem;
 }
 
-/* ===== EXPERIENCIA ===== */
+/* ===== EXPERIENCE ===== */
 .experience-section {
     max-width: 1000px;
     margin: 5rem auto;
@@ -379,7 +379,7 @@ h1, h2, h3, h4 {
     font-size: 1.2rem;
 }
 
-/* ===== PROJECTS (heredado pero ajustado) ===== */
+/* ===== PROJECTS ===== */
 .projects-container {
     max-width: 1200px;
     margin: 5rem auto;
@@ -443,7 +443,7 @@ h1, h2, h3, h4 {
     font-size: 0.85rem;
 }
 
-/* ===== EDUCATION & LANGUAGES unificados ===== */
+/* ===== EDUCATION & LANGUAGES  ===== */
 .education-languages {
     max-width: 1000px;
     margin: 5rem auto;

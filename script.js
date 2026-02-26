@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let displayedProjects = 6;
 
     function renderProjects(limit) {
-        projectsContainer.innerHTML = ""; // Clear container
+        projectsContainer.innerHTML = ""; 
 
         PROJECTS.slice(0, limit).forEach((project, index) => {
             const projectDiv = document.createElement("div");
@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             projectsContainer.appendChild(projectDiv);
 
-            // Start carousel only if there are multiple images
             if (project.image.length > 1) {
                 startImageCarousel(imageContainerId, project.image);
             }
@@ -111,6 +110,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Initial rendering
     renderProjects(displayedProjects);
 });
