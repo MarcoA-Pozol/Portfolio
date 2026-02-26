@@ -16,23 +16,18 @@ document.addEventListener("DOMContentLoaded", () => {
             technologies: ["React Native", "FastAPI", "PostgreSQL", "OpenAI", "Typescript", "JWT", "SMTP", "REST", "AWS IoT Core", "AWS Lambda", "AWS API Gateway"]
         },
         {
-            title: "Manufacturing ERP & CRM",
-            description: "ERP + CRM for a computers/cellphones/laptops designing, assembling, testing, producing and selling processes management, plus customer and client management for financial tracking. This system is suitable for any other company or industry of manufacturing that uses components to assemble its final product.",
-            image: ["assets/nss_project_3.png", "assets/nss_project_2.png", "assets/nss_project_4.png"],
-            technologies: ["Vue3", "FastAPI", "PostgreSQL", "Redis", "Typescript", "JWT", "SMTP", "Poetry", "REST"]
-        },
-        {
             title: "Luabla",
             description: "Learn languages, share and study your own decks of cards, or get them from the community. Luabla is a bridge for those who want to enroll in the language learning journey with ease.",
             image: ["assets/luabla_3.png", "assets/luabla_2.png", "assets/luabla_1.png"],
             technologies: ["Django", "DRF", "FastAPI", "JWT Auth", "PostgreSQL", "MongoDB", "Redis", "HTML", "CSS", "JavaScript", "Swagger"]
         },
         {
-            title: "DataForge",
-            description: "Analyse, visualize, import and export your data between formats like CSV, JSON, and XLS. Ideal for fast visualization and chart generation for analysis.",
-            image: ["assets/dataforge2.png", "assets/dataforge1.png"],
-            technologies: ["Django", "DRF", "React", "PostgreSQL", "JWT Auth", "Docker", "Jenkins", "Redis", "HTML", "CSS", "JavaScript", "Prometheus", "Graphana", "UnitTest"]
+            title: "Manufacturing ERP & CRM",
+            description: "ERP + CRM for a computers/cellphones/laptops designing, assembling, testing, producing and selling processes management, plus customer and client management for financial tracking. This system is suitable for any other company or industry of manufacturing that uses components to assemble its final product.",
+            image: ["assets/nss_project_3.png", "assets/nss_project_2.png", "assets/nss_project_4.png"],
+            technologies: ["Vue3", "FastAPI", "PostgreSQL", "Redis", "Typescript", "JWT", "SMTP", "Poetry", "REST"]
         },
+        
         {
             title: "ETL Population Dataset",
             description: "Application of each ETL process step for exploratory and analytical data science over a USA population dataset for pattern identification and comparative analysis.",
