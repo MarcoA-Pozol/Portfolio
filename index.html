@@ -3,198 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marco Pozol · Cloud & FullStack Engineer</title>
+    <title>Marco Pozol · FullStack & Cloud Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome 6 (free) -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts para tipografía más moderna -->
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
     <script defer src="script.js"></script>
     <script defer src="contact.js"></script>
     <script src="get_commits.js"></script>
 </head>
+
 <body class="centered-gradient">
-    <!-- INTRO / HERO SECTION -->
-    <section class="hero">
-        <div class="hero-content">
-            <span class="hero-badge"><i class="fas fa-cloud"></i> Cloud · Serverless · FullStack</span>
-            <h1 class="hero-title">
-                <span class="hero-greeting">{</span> 
-                Marco Pozol <span class="hero-greeting">:</span> 
-                <span class="hero-highlight">Cloud & FullStack Engineer</span> 
-                <span class="hero-greeting">}</span>
-            </h1>
-            <p class="hero-subtitle">
-                Solutions Engineer specializing in <strong>SaaS</strong>, <strong>Cloud Integration</strong>, <strong>Full-Stack Development</strong>, and <strong>Industrial Process Automation</strong>.
-                Proven experience delivering software solutions for the <b>manufacturing industry</b>, covering <b>planning</b>, <b>development</b>, <b>testing</b>, and <b>deployment</b>.
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+
+        <span class="hero-badge">
+            <i class="fas fa-cloud"></i>
+            <span data-i18n="hero_badge"></span>
+        </span>
+
+        <h1 class="hero-title">
+            <span class="hero-greeting">{</span> 
+            Marco Pozol <span class="hero-greeting">:</span> 
+            <span class="hero-highlight" data-i18n="hero_title_highlight"></span>
+            <span class="hero-greeting">}</span>
+        </h1>
+
+        <p class="hero-subtitle" data-i18n="hero_subtitle"></p>
+
+        <div class="hero-cta">
+            <a href="#projects" class="btn-primary">
+                <i class="fas fa-arrow-down"></i>
+                <span data-i18n="projects_btn"></span>
+            </a>
+
+            <a href="assets/marco_cv_2.pdf" download class="btn-outline">
+                <i class="fas fa-download"></i>
+                <span data-i18n="resume_btn"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-stats">
+        <div class="stat-item">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <strong>3+</strong>
+            <span data-i18n="stats_cloud"></span>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-code-branch"></i>
+            <strong>2+</strong>
+            <span data-i18n="stats_experience"></span>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-microchip"></i>
+            <strong>2</strong>
+            <span data-i18n="stats_systems"></span>
+        </div>
+    </div>
+
+    <div class="blush-glow first"></div>
+    <div class="blush-glow second"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="aboutme">
+    <div class="aboutme-grid">
+
+        <aside class="abt-info left">
+            <h2 data-i18n="about_title"></h2>
+
+            <p>
+                <i class="fas fa-terminal" style="color:#9b59b6; margin-right:8px;"></i>
+                <span data-i18n="about_text"></span>
             </p>
-            <div class="hero-cta">
-                <a href="#projects" class="btn-primary"><i class="fas fa-arrow-down"></i> Projects</a>
-                <a href="assets/marco_cv_2.pdf" download class="btn-outline"><i class="fas fa-download"></i> Resume</a>
-            </div>
-        </div>
-        <!-- Pequeño "command center" de stats -->
-        <div class="hero-stats">
-            <div class="stat-item">
-                <i class="fas fa-cloud-upload-alt"></i>
-                <strong>3+</strong>
-                <span>Cloud Projects</span>
-            </div>
-            <div class="stat-item">
-                <i class="fas fa-code-branch"></i>
-                <strong>2+</strong>
-                <span>Years of Experience</span>
-            </div>
-            <div class="stat-item">
-                <i class="fas fa-microchip"></i>
-                <strong>2</strong>
-                <span>Deployed Systems</span>
-            </div>
-        </div>
-        <!-- Blush effects heredados (mejorados) -->
-        <div class="blush-glow first"></div>
-        <div class="blush-glow second"></div>
-    </section>
 
-    <!-- ABOUT ME compacto pero con foto y esencia -->
-    <section class="aboutme">
-        <div class="aboutme-grid">
-            <aside class="abt-info left">
-                <h2>FullStack <span style="color: white;">&</span> Cloud</h2>
-                <p>
-                    <i class="fas fa-terminal" style="color: #9b59b6; margin-right: 8px;"></i>
-                    Hola, soy <strong>Marco</strong>. Durante los últimos años he pasado de escribir código frontend 
-                    a <strong>diseñar arquitecturas híbridas</strong> que conectan hardware, AWS y pasarelas de pago. 
-                    Me especializo en automatizar procesos industriales y monetizar dispositivos mediante modelos SaaS.
-                </p>
-                <div class="availability-tag">
-                    <span class="pulse-dot"></span> OPEN TO WORK
-                </div>
-            </aside>
-            <div class="abt-info photo">
-                <img id="dev-photo" src="assets/profile_image.jpg" alt="MarcoA-Pozol">
+            <div class="availability-tag">
+                <span class="pulse-dot"></span>
+                <span data-i18n="availability"></span>
             </div>
-            <aside class="abt-info right">
-                <ul>
-                    <li><i class="fas fa-certificate"></i> <strong>AWS</strong><p>Lambda, IoT Core, Aurora DSQL, API Gateway, AWS SES</p></li>
-                    <li><i class="fas fa-code"></i> <strong>Full-Stack</strong><p>React Native, Django, FastAPI, TypeScript, Flutter</p></li>
-                    <li><i class="fas fa-credit-card"></i> <strong>Payments</strong><p>Openpay / Facturapi</p></li>
-                </ul>
-            </aside>
-        </div>
-    </section>
+        </aside>
 
-    <!-- SKILLS (categorizadas con iconos) -->
-    <section class="skills-section">
-        <h2 class="section-title"><i class="fas fa-cogs"></i> Skills & Tooling</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3><i class="fas fa-cloud"></i> Cloud (AWS)</h3>
-                <ul>
-                    <li>IoT Core, Lambda, Aurora DSQL</li>
-                    <li>API Gateway, Cognito, EventBridge</li>
-                    <li>S3, DynamoDB, CloudWatch, IAM</li>
-                    <li>Serverless + on‑premise híbrido</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-code"></i> FullStack</h3>
-                <ul>
-                    <li>TypeScript / JavaScript · React · Vue</li>
-                    <li>Python (FastAPI, Django) · Node.js</li>
-                    <li>PostgreSQL, MongoDB, Redis</li>
-                    <li>REST · MQTT · WebSockets</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-handshake"></i> Soft Skills</h3>
-                <ul>
-                    <li> Teamwork · Communication · Planification</li>
-                    <li> Responsability · Optimism · Adaptability</li>
-                    <li> Analisis · Focusness · Problem Solving</li>
-                    <li> Speak "customer's" language</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-tools"></i> DevOps & Tools</h3>
-                <ul>
-                    <li>Docker · GitHub Actions (CI/CD) · Jenkins </li>
-                    <li>Linux (Ubuntu) · Systemd - Bash</li>
-                    <li>UnitTest · PyTest · TDD</li>
-                    <li>GitHub · GitFlow</li>
-                </ul>
-            </div>
+        <div class="abt-info photo">
+            <img src="assets/profile_image.jpg" alt="MarcoA-Pozol">
         </div>
-    </section>
 
-    <!-- EXPERIENCIA DESTACADA (ahora con la nueva de REGAMSA) -->
-    <section class="experience-section">
-        <h2 class="section-title"><i class="fas fa-briefcase"></i> Experiencia reciente</h2>
-        <div class="experience-card">
-            <div class="exp-header">
-                <i class="fas fa-microchip"></i>
-                <div>
-                    <h3>IoT SaaS Ecosystem · REGAMSA Medical</h3>
-                    <span class="exp-date">Nov 2025 — actual</span>
-                </div>
-            </div>
-            <p><strong>FullStack & Cloud Engineer</strong> — Arquitectura completa de un SaaS para gestión de dispositivos médicos conectados.</p>
-            <ul class="exp-details">
-                <li><i class="fas fa-check-circle"></i> Integración de <strong>AWS IoT Core</strong> con pasarelas de pago (Openpay/Facturapi) para automatizar suscripciones.</li>
-                <li><i class="fas fa-check-circle"></i> Lógica de <strong>“Kill Switch”</strong> remoto/local que desactiva certificados IoT y servicios Mosquitto ante impago.</li>
-                <li><i class="fas fa-check-circle"></i> WebViews + Webhooks para facturación electrónica automatizada (100% reducción de carga administrativa).</li>
-                <li><i class="fas fa-check-circle"></i> Uso de <strong>Aurora DSQL, Lambda y EventBridge</strong> para escalar con baja latencia.</li>
-            </ul>
-        </div>
-        <div class="experience-card">
-            <div class="exp-header">
-                <i class="fas fa-industry"></i>
-                <div>
-                    <h3>Industrial Process Optimization · REGAMSA Medical</h3>
-                    <span class="exp-date">Ene 2026 — actual</span>
-                </div>
-            </div>
-            <p><strong>Software Engineer</strong> — ERP mobile‑first para planta manufacturera.</p>
-            <ul class="exp-details">
-                <li><i class="fas fa-check-circle"></i> Flujo desde orden de compra hasta entrega final, eliminando cuellos de botella.</li>
-                <li><i class="fas fa-check-circle"></i> Semáforo operacional con MQTT + WebSockets para monitoreo en tiempo real.</li>
-                <li><i class="fas fa-check-circle"></i> Backend híbrido: FastAPI (on‑premise) + AWS Lambda, con disponibilidad 24/7.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- PROJECTS (mismo sistema de script.js, solo cambia el título) -->
-    <div class="projects-container" id="projects">
-        <h2 class="section-title"><i class="fas fa-project-diagram"></i> Proyectos clave</h2>
-        <div id="projects-list"></div>
-        <!-- <button id="load-more-projects-button" style="display: none;">Cargar más</button> -->
-    </div>
-
-    <!-- EDUCATION + LANGUAGES unificados con iconos -->
-    <section class="education-languages">
-        <div class="edu-card">
-            <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
-            <p><strong>Ingeniería en Sistemas Computacionales</strong> · UVEG <i class="fas fa-building"></i></p>
-            <p>2023 — (Esperado Jun 2026) <i class="fas fa-medal"></i></p>
-            <p class="edu-description">Formación continua con enfoque autodidacta, aprendiendo de documentación oficial y proyectos reales. Además de la técnica, desarrollo habilidades interpersonales para entornos profesionales.</p>
-        </div>
-        <div class="lang-card">
-            <h2><i class="fas fa-language"></i> Idiomas</h2>
+        <aside class="abt-info right">
             <ul>
-                <li><img src="assets/svg/usflag.svg" alt="US" class="flag-icon"> Inglés · B2 (conversacional)</li>
+                <li>
+                    <i class="fas fa-certificate"></i>
+                    <strong>AWS</strong>
+                    <p>Lambda, IoT Core, Aurora DSQL, API Gateway, AWS SES</p>
+                </li>
+                <li>
+                    <i class="fas fa-code"></i>
+                    <strong>Full-Stack</strong>
+                    <p>React Native, Django, FastAPI, TypeScript, Flutter</p>
+                </li>
+                <li>
+                    <i class="fas fa-credit-card"></i>
+                    <strong>Payments</strong>
+                    <p>Openpay / Facturapi</p>
+                </li>
+            </ul>
+        </aside>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section">
+    <h2 class="section-title">
+        <i class="fas fa-cogs"></i>
+        <span data-i18n="skills_title"></span>
+    </h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-category">
+            <h3><i class="fas fa-cloud"></i> <span data-i18n="cloud_title"></span></h3>
+        </div>
+
+        <div class="skill-category">
+            <h3><i class="fas fa-code"></i> <span data-i18n="fullstack_title"></span></h3>
+        </div>
+
+        <div class="skill-category">
+            <h3><i class="fas fa-handshake"></i> <span data-i18n="softskills_title"></span></h3>
+            <ul>
+                <li data-i18n="softskills_list_1"></li>
+                <li data-i18n="softskills_list_2"></li>
+                <li data-i18n="softskills_list_3"></li>
+                <li data-i18n="softskills_list_4"></li>
             </ul>
         </div>
-    </section>
 
-    <!-- CONTACT (la foto ya se movió a about, así que aquí solo contacto) -->
-    <div class="contacts-container">
-        <h2><i class="fas fa-paper-plane"></i> Conectemos</h2>
-        <div id="contacts-list"></div>
-        <span id="last-message"><i class="fas fa-handshake"></i> Listo para colaborar en tu próximo desafío cloud.</span>
+        <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> <span data-i18n="devops_title"></span></h3>
+        </div>
+
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience-section">
+    <h2 class="section-title">
+        <i class="fas fa-briefcase"></i>
+        <span data-i18n="experience_title"></span>
+    </h2>
+
+    <div class="experience-card">
+        <div class="exp-header">
+            <i class="fas fa-microchip"></i>
+            <div>
+                <h3 data-i18n="exp1_title"></h3>
+                <span class="exp-date" data-i18n="exp1_date"></span>
+            </div>
+        </div>
+
+        <p data-i18n="exp1_role"></p>
+
+        <ul class="exp-details">
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp1_1"></span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp1_2"></span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp1_3"></span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp1_4"></span></li>
+        </ul>
     </div>
 
-    <footer>
-        <p>© 2025 Marco Pozol · <i class="fas fa-cat"></i> · built with serverless attitude</p>
-    </footer>
+    <div class="experience-card">
+        <div class="exp-header">
+            <i class="fas fa-industry"></i>
+            <div>
+                <h3 data-i18n="exp2_title"></h3>
+                <span class="exp-date" data-i18n="exp2_date"></span>
+            </div>
+        </div>
+
+        <p data-i18n="exp2_role"></p>
+
+        <ul class="exp-details">
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp2_1"></span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp2_2"></span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="exp2_3"></span></li>
+        </ul>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<div class="projects-container" id="projects">
+    <h2 class="section-title">
+        <i class="fas fa-project-diagram"></i>
+        <span data-i18n="projects_title"></span>
+    </h2>
+    <div id="projects-list"></div>
+</div>
+
+<!-- EDUCATION -->
+<section class="education-languages">
+
+    <div class="edu-card">
+        <h2><i class="fas fa-graduation-cap"></i> <span data-i18n="education_title"></span></h2>
+        <p><strong data-i18n="education_degree"></strong></p>
+        <p data-i18n="education_date"></p>
+        <p class="edu-description" data-i18n="education_desc"></p>
+    </div>
+
+    <div class="lang-card">
+        <h2><i class="fas fa-language"></i> <span data-i18n="languages_title"></span></h2>
+        <ul>
+            <li>
+                <img src="assets/svg/usflag.svg" class="flag-icon">
+                <span data-i18n="english_level"></span>
+            </li>
+        </ul>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<div class="contacts-container">
+    <h2>
+        <i class="fas fa-paper-plane"></i>
+        <span data-i18n="contact_title"></span>
+    </h2>
+
+    <div id="contacts-list"></div>
+
+    <span id="last-message">
+        <i class="fas fa-handshake"></i>
+        <span data-i18n="contact_message"></span>
+    </span>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p data-i18n="footer"></p>
+</footer>
+
 </body>
 </html>
