@@ -143,6 +143,11 @@ const translations = {
         softskills_title: "Soft Skills",
         devops_title: "DevOps & Tools",
 
+        cloudskills_list_1: "AWS Lambda · AWS API Gateway  · AWS Event Bridge",
+        cloudskills_list_2: "AWS SES · AWS Cognito · AWS IAM",
+        cloudskills_list_3: "AWS Aurora DSQL · AWS DynamoDB · AWS S3",
+        cloudskills_list_4: "AWS IoT · AWS CloudWatch · AWS SES",
+
         softskills_list_1: "Teamwork · Communication · Planning",
         softskills_list_2: "Responsibility · Optimism · Adaptability",
         softskills_list_3: "Analysis · Focus · Problem Solving",
@@ -212,6 +217,11 @@ const translations = {
         fullstack_title: "FullStack",
         softskills_title: "Habilidades Blandas",
         devops_title: "DevOps y Herramientas",
+
+        cloudskills_list_1: "AWS Lambda · AWS API Gateway  · AWS Event Bridge",
+        cloudskills_list_2: "AWS SES · AWS Cognito · AWS IAM",
+        cloudskills_list_3: "AWS Aurora DSQL · AWS DynamoDB · AWS S3",
+        cloudskills_list_4: "AWS IoT · AWS CloudWatch · AWS SES",
 
         softskills_list_1: "Trabajo en equipo · Comunicación · Planeación",
         softskills_list_2: "Responsabilidad · Optimismo · Adaptabilidad",
