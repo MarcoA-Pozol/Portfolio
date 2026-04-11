@@ -123,7 +123,7 @@ const translations = {
         hero_badge: "Fullstack · Cloud · Distributed Systems",
         hero_title_highlight: "Cloud & FullStack Engineer",
         hero_subtitle: `Software Engineer specializing in <strong>Distributed Systems</strong>, <strong>Cloud Integration</strong>, <strong>Full-Stack Development</strong>, and <strong>Process Automation</strong>. Proven experience delivering software solutions for the <b>medical industry</b>, <b>manufacturing industry</b>, and <b>SaaS systems</b>; covering <b>planning</b>, <b>development</b>, <b>testing</b>, and <b>deployment</b>.`,
-        projects_btn: "Projects",
+        projects_btn: "Experience",
         resume_btn: "Resume",
 
         stats_cloud: "Cloud Projects",
@@ -208,7 +208,7 @@ const translations = {
         hero_title_highlight: "Ingeniero Cloud y FullStack",
         hero_subtitle: `Ingeniero de Software especializado en <strong>Sistemas Distribuidos</strong>, <strong>Integración Cloud</strong>, <strong>Desarrollo Full-Stack</strong> y <strong>Automatización de Procesos</strong>.
         Experiencia comprobada entregando soluciones de software para la <b>industria médica</b>, <b>industria de manufactura</b>, y sistemas <b>SaaS</b>; cubriendo <b>planeación</b>, <b>desarrollo</b>, <b>pruebas</b> y <b>despliegue</b>.`,
-        projects_btn: "Proyectos",
+        projects_btn: "Experiencia",
         resume_btn: "CV",
 
         stats_cloud: "Proyectos Cloud",
