@@ -158,6 +158,11 @@ const translations = {
         softskills_list_3: "Analysis · Focus · Problem Solving",
         softskills_list_4: "Speak the customer's language",
 
+        devopsskills_list_1: "GitHub · Jira · Notion · SCRUM",
+        devopsskills_list_2: "GitHub Actions · CI/CD Pipelines",
+        devopsskills_list_3: "Unit Testing · TDD · PyTest",
+        devopsskills_list_4: "Docker · Kubernetes · Linux Based Servers",
+
         // EXPERIENCE
         experience_title: "Recent Experience",
 
@@ -237,6 +242,11 @@ const translations = {
         softskills_list_2: "Responsabilidad · Optimismo · Adaptabilidad",
         softskills_list_3: "Análisis · Enfoque · Resolución de problemas",
         softskills_list_4: "Hablar el lenguaje del cliente",
+
+        devopsskills_list_1: "GitHub · Jira · Notion · SCRUM",
+        devopsskills_list_2: "GitHub Actions · CI/CD Pipelines",
+        devopsskills_list_3: "Unit Testing · TDD · PyTest",
+        devopsskills_list_4: "Docker · Kubernetes · Linux Based Servers",
 
         // EXPERIENCE
         experience_title: "Experiencia reciente",
