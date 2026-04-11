@@ -40,6 +40,30 @@ h1, h2, h3, h4 {
     color: #a78bfa;
 }
 
+/* ==== TOP OPTIONS ===== */
+.lang-switcher {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    display: flex;
+    gap: 8px;
+    background: rgba(20, 20, 30, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.lang-switcher button {
+    background: transparent;
+    padding: 10px;
+    border: none;
+    color: #ccc;
+}
+.lang-switcher button:hover {
+    color: rebeccapurple;
+    cursor: pointer;
+}
+
 /* ===== HERO SECTION ===== */
 .hero {
     min-height: 90vh;
