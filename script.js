@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "REGAMSA Alarms Monitoring SaaS",
             description: "Ecosistema SaaS para gestión de dispositivos médicos con arquitectura serverless. Integra AWS IoT Core, pasarelas de pago (Openpay) y lógica de 'kill switch' para suspender servicios por impago. Frontend mobile‑first con Flutter, backend híbrido Python/AWS-Lambda y base de datos Aurora DSQL.",
-            image: ["assets/regamsa_saas_1.png"],
+            image: ["assets/regamsa_monitoring_1.jpeg", "assets/regamsa_monitoring_2.jpeg", "assets/regamsa_monitoring_3.jpeg"],
             technologies: ["Flutter", "FastAPI", "AWS Lambda", "Aurora DSQL", "IoT Core", "Openpay", "TypeScript", "MQTT"]
         },
         {
