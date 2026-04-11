@@ -148,6 +148,11 @@ const translations = {
         cloudskills_list_3: "AWS Aurora DSQL · AWS DynamoDB · AWS S3",
         cloudskills_list_4: "AWS IoT · AWS CloudWatch · AWS SES",
 
+        fullstackskills_list_1: "Python · FastAPI · Django · NodeJS",
+        fullstackskills_list_2: "React · VueJs · Typescript · Javascript",
+        fullstackskills_list_3: "PostgreSQL · MySQL · MongoDB · Redis",
+        fullstackskills_list_4: "Flutter · Dart · React Native",
+
         softskills_list_1: "Teamwork · Communication · Planning",
         softskills_list_2: "Responsibility · Optimism · Adaptability",
         softskills_list_3: "Analysis · Focus · Problem Solving",
@@ -222,6 +227,11 @@ const translations = {
         cloudskills_list_2: "AWS SES · AWS Cognito · AWS IAM",
         cloudskills_list_3: "AWS Aurora DSQL · AWS DynamoDB · AWS S3",
         cloudskills_list_4: "AWS IoT · AWS CloudWatch · AWS SES",
+
+        fullstackskills_list_1: "Python · FastAPI · Django · NodeJS",
+        fullstackskills_list_2: "React · VueJs · Typescript · Javascript",
+        fullstackskills_list_3: "PostgreSQL · MySQL · MongoDB · Redis",
+        fullstackskills_list_4: "Flutter · Dart · React Native",
 
         softskills_list_1: "Trabajo en equipo · Comunicación · Planeación",
         softskills_list_2: "Responsabilidad · Optimismo · Adaptabilidad",
