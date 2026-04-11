@@ -131,13 +131,13 @@ const translations = {
         stats_systems: "Deployed Systems",
 
         // ABOUT
-        about_title: "FullStack & Cloud",
-        about_text: `Hi, I'm <strong>Marco</strong>. Over the past few years, I’ve evolved from writing frontend code to <strong>designing hybrid architectures</strong> that connect hardware, AWS, and payment gateways.
-        I specialize in automating industrial processes and monetizing devices through SaaS models.`,
+        about_title: "About me:",
+        about_text: `Hi there!, I'm <strong>Marco</strong>. Over the past few years, I’ve worked in the medical device manufacturing sector. I have experience <strong>designing hybrid architectures</strong> that connect complete fullstack systems with the cloud and payment gateways.
+        I specialize in automating industrial management processes and delivering solutions through SaaS models.`,
         availability: "OPEN TO WORK",
 
         // SKILLS
-        skills_title: "Skills & Tooling",
+        skills_title: "Skills",
         cloud_title: "Cloud (AWS)",
         fullstack_title: "FullStack",
         softskills_title: "Soft Skills",
@@ -216,13 +216,13 @@ const translations = {
         stats_systems: "Sistemas desplegados",
 
         // ABOUT
-        about_title: "FullStack & Cloud",
-        about_text: `Hola, soy <strong>Marco</strong>. Durante los últimos años he evolucionado de escribir código frontend a <strong>diseñar arquitecturas híbridas</strong> que conectan hardware, AWS y pasarelas de pago.
-        Me especializo en automatizar procesos industriales y monetizar dispositivos mediante modelos SaaS.`,
+        about_title: "Sobre mi:",
+        about_text: `Hola, soy <strong>Marco</strong>. Durante los últimos años he trabajado en el sector de manufactura de dispositivos médicos. Tengo experiencia en <strong>diseñar arquitecturas híbridas</strong> que conectan sistemas fullstack completos con nube y pasarelas de pago.
+        Me especializo en automatizar procesos de gestión industrial y entrega de soluciones mediante modelos SaaS.`,
         availability: "DISPONIBLE PARA TRABAJAR",
 
         // SKILLS
-        skills_title: "Habilidades y Herramientas",
+        skills_title: "Habilidades",
         cloud_title: "Cloud (AWS)",
         fullstack_title: "FullStack",
         softskills_title: "Habilidades Blandas",
