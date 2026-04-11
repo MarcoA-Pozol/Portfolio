@@ -120,10 +120,9 @@ document.addEventListener("DOMContentLoaded", () => {
 const translations = {
     en: {
         // HERO
-        hero_badge: "Cloud · Serverless · FullStack",
+        hero_badge: "Fullstack · Cloud · Distributed Systems",
         hero_title_highlight: "Cloud & FullStack Engineer",
-        hero_subtitle: `Solutions Engineer specializing in <strong>SaaS</strong>, <strong>Cloud Integration</strong>, <strong>Full-Stack Development</strong>, and <strong>Industrial Process Automation</strong>.
-        Proven experience delivering software solutions for the <b>manufacturing industry</b>, covering <b>planning</b>, <b>development</b>, <b>testing</b>, and <b>deployment</b>.`,
+        hero_subtitle: `Software Engineer specializing in <strong>Distributed Systems</strong>, <strong>Cloud Integration</strong>, <strong>Full-Stack Development</strong>, and <strong>Process Automation</strong>. Proven experience delivering software solutions for the <b>medical industry</b>, <b>manufacturing industry</b>, and <b>SaaS systems</b>; covering <b>planning</b>, <b>development</b>, <b>testing</b>, and <b>deployment</b>.`,
         projects_btn: "Projects",
         resume_btn: "Resume",
 
@@ -190,10 +189,10 @@ const translations = {
 
     es: {
         // HERO
-        hero_badge: "Cloud · Serverless · FullStack",
+        hero_badge: "Fullstack · Nube · Sistemas Distribuidos",
         hero_title_highlight: "Ingeniero Cloud y FullStack",
-        hero_subtitle: `Ingeniero de soluciones especializado en <strong>SaaS</strong>, <strong>Integración Cloud</strong>, <strong>Desarrollo Full-Stack</strong> y <strong>Automatización de Procesos Industriales</strong>.
-        Experiencia comprobada entregando soluciones de software para la <b>industria manufacturera</b>, cubriendo <b>planeación</b>, <b>desarrollo</b>, <b>pruebas</b> y <b>despliegue</b>.`,
+        hero_subtitle: `Ingeniero de Software especializado en <strong>Sistemas Distribuidos</strong>, <strong>Integración Cloud</strong>, <strong>Desarrollo Full-Stack</strong> y <strong>Automatización de Procesos</strong>.
+        Experiencia comprobada entregando soluciones de software para la <b>industria médica</b>, <b>industria de manufactura</b>, y sistemas <b>SaaS</b>; cubriendo <b>planeación</b>, <b>desarrollo</b>, <b>pruebas</b> y <b>despliegue</b>.`,
         projects_btn: "Proyectos",
         resume_btn: "CV",
 
