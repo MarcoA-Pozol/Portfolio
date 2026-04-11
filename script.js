@@ -164,7 +164,7 @@ const translations = {
         devopsskills_list_4: "Docker · Kubernetes · Linux Based Servers",
 
         // EXPERIENCE
-        experience_title: "Recent Experience",
+        experience_title: "Experience",
 
         exp1_title: "IoT SaaS Ecosystem · REGAMSA Medical",
         exp1_date: "Nov 2025 — Present",
@@ -182,7 +182,7 @@ const translations = {
         exp2_3: "Hybrid backend: FastAPI (on-premise) + AWS Lambda, ensuring 24/7 availability.",
 
         // PROJECTS
-        projects_title: "Key Projects",
+        projects_title: "Projects",
 
         // EDUCATION
         education_title: "Education",
@@ -196,10 +196,10 @@ const translations = {
 
         // CONTACT
         contact_title: "Let's Connect",
-        contact_message: "Ready to collaborate on your next cloud challenge.",
+        contact_message: "Ready to collaborate on your next challenge.",
 
         // FOOTER
-        footer: "© 2025 Marco Pozol · built with serverless attitude"
+        footer: "Quality · Reliability · Security"
     },
 
     es: {
@@ -249,7 +249,7 @@ const translations = {
         devopsskills_list_4: "Docker · Kubernetes · Linux Based Servers",
 
         // EXPERIENCE
-        experience_title: "Experiencia reciente",
+        experience_title: "Experiencia",
 
         exp1_title: "Ecosistema IoT SaaS · REGAMSA Medical",
         exp1_date: "Nov 2025 — Actual",
@@ -267,7 +267,7 @@ const translations = {
         exp2_3: "Backend híbrido: FastAPI (on-premise) + AWS Lambda, con disponibilidad 24/7.",
 
         // PROJECTS
-        projects_title: "Proyectos clave",
+        projects_title: "Proyectos",
 
         // EDUCATION
         education_title: "Educación",
@@ -281,10 +281,10 @@ const translations = {
 
         // CONTACT
         contact_title: "Conectemos",
-        contact_message: "Listo para colaborar en tu próximo desafío cloud.",
+        contact_message: "Listo para colaborar en tu próximo desafío.",
 
         // FOOTER
-        footer: "© 2025 Marco Pozol · construido con mentalidad serverless"
+        footer: "Cálidad · Confiabilidad · Seguridad"
     }
 };
 
