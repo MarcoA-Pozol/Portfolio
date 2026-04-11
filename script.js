@@ -126,7 +126,7 @@ const translations = {
         projects_btn: "Experience",
         resume_btn: "Resume",
 
-        stats_cloud: "Cloud Projects",
+        stats_projects: "Own Projects",
         stats_experience: "Years of Experience",
         stats_systems: "Deployed Systems",
 
@@ -211,7 +211,7 @@ const translations = {
         projects_btn: "Experiencia",
         resume_btn: "CV",
 
-        stats_cloud: "Proyectos Cloud",
+        stats_projects: "Proyectos Propios",
         stats_experience: "Años de experiencia",
         stats_systems: "Sistemas desplegados",
 
